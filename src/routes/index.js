@@ -1,9 +1,13 @@
-import FirstStep from '../components/steps/FirstStep.vue';
-import SecondStep from '../components/steps/SecondStep.vue';
-import ThirdStep from '../components/steps/ThirdStep.vue';
+import Vuedenez from '../components/vuedenez/Vuedenez';
+import Techno from "../components/techno/Techno";
+import Confiance from "../components/confiance/Confiance";
+import Murphy from "../components/murphy/Murphy";
+import Result from "../components/result/Result";
 
 export const routes = [
-    { path: '/first-step', name: 'firstStep', component: FirstStep },
-    { path: '/second-step', name: 'secondStep', component: SecondStep },
-    { path: '/third-step', name: 'thirdStep', component: ThirdStep }
+    { path: '/vuedenez', name: 'vuedenez', component: Vuedenez },
+    { path: '/techno', name: 'techno', component: Techno },
+    { path: '/confiance', name: 'confiance', component: Confiance },
+    { path: '/murphy', name: 'murphy', component: Murphy },
+    { path: '/result', name: 'result', component: Result }
 ];

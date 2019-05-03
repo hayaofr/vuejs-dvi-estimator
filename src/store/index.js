@@ -6,76 +6,32 @@ Vue.use(Vuex)
 export default new Vuex.Store(
     {
         state: {
-            firstname: "",
-            lastname: "",
-            email: "",
-            password: "",
-            gender: "",
-            phone: "",
-            birthdate: "",
-            country: "",
-            state: "",
-            city: "",
-            street: "",
-            zipcode: "",
-            facebook: "",
-            google: "",
-            twitter: "",
-            linkedin: "",
-            instagram: ""
+            vuedenez: "0",
+            techno: "0",
+            confiance: "0",
+            murphy: "0",
+            libelleMurphy: "",
+            result: "0"
         },
         mutations: {
-            setFirstname(state, value) {
-                state.firstname = value
+            setVuedenez(state, value) {
+                state.vuedenez = value
             },
-            setLastname(state, value) {
-                state.lastname = value
+            setTechno(state, value) {
+                state.techno = value
             },
-            setEmail(state, value) {
-                state.email = value
+            setConfiance(state, value) {
+                state.confiance = value
             },
-            setPassword(state, value) {
-                state.password = value
+            setMurphy(state, value) {
+                state.murphy = value
             },
-            setGender(state, value) {
-                state.gender = value
+            setLibelleMurphy(state, value) {
+                state.libelleMurphy = value
             },
-            setPhone(state, value) {
-                state.phone = value
-            },
-            setBirthdate(state, value) {
-                state.birthdate = value
-            },
-            setCountry(state, value) {
-                state.country = value
-            },
-            setState(state, value) {
-                state.state = value
-            },
-            setCity(state, value) {
-                state.city = value
-            },
-            setStreet(state, value) {
-                state.street = value
-            },
-            setZipcode(state, value) {
-                state.zipcode = value
-            },
-            setFacebook(state, value) {
-                state.facebook = value
-            },
-            setGoogle(state, value) {
-                state.google = value
-            },
-            setTwitter(state, value) {
-                state.twitter = value
-            },
-            setLinkedin(state, value) {
-                state.linkedin = value
-            },
-            setInstagram(state, value) {
-                state.instagram = value
-            },
+            setResult(state, value) {
+                state.result = value
+            }
         }
     }
 )
