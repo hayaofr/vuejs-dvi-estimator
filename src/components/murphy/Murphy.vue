@@ -20,6 +20,17 @@
                         </div>
                     </div>
                 </div>
+                <b-modal id="bv-modal-murphy" centered  no-fade hide-footer>
+                    <template slot="modal-header">
+                        <div class="d-block text-center">
+                            <h5>Loi de Murphy en cours d'exécution !</h5>
+                        </div>
+                    </template>
+                    <div class="d-block text-center">
+                        <h3><img alt="loading" src="../../assets/images/loading-bars.svg" width="64"
+                                 height="64"/></h3>
+                    </div>
+                </b-modal>
             </div>
         </div>
     </b-form>
@@ -94,7 +105,13 @@
                 evt.preventDefault()
             },
             goToNext() {
-                this.$router.push("/result/");
+                this.$bvModal.show("bv-modal-murphy");
+                setTimeout(() => {
+                    this.$store.commit("computeEstimate");
+                    this.$bvModal.hide("bv-modal-murphy");
+                    this.$router.push("/result/");
+                }, 5000)
+
             }
 
         }

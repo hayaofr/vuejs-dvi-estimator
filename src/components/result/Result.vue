@@ -1,5 +1,5 @@
 <template>
-
+    <div>
         <div class="tab-pane fade in active">
             <h4 class="head text-center">Résultat de l'estimation</h4>
             <br/>
@@ -11,6 +11,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </template>
 
 <script>
@@ -28,8 +29,7 @@
                 }
             }
         },
-        methods: {
-        }
+        methods: {}
     };
 
 </script>

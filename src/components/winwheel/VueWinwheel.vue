@@ -105,11 +105,11 @@
                     case "Lot 2":
                         return "Titanic: chantons pendant le naufrage"
                     case "Lot 3":
-                        return "Ca passe crème"
+                        return "Ca passe nickel"
                     case "Lot 4":
                         return "Mieux que prévu: les miracles existent"
                     case "Lot 5":
-                        return "Syndrôme du batiment:Avec combien de mois de retard votre projet m'sieur ?"
+                        return "Syndrôme du batiment:Combien de mois de retard votre projet m'sieur ?"
                     case "Lot 6":
                         return "Une spec ? Mais quelle spec ?"
                     default:

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {computeConfiance, computeMurphy, computeTechno} from './compute.js'
 
 Vue.use(Vuex)
 
@@ -31,6 +32,16 @@ export default new Vuex.Store(
             },
             setResult(state, value) {
                 state.result = value
+            },
+            computeEstimate(state) {
+
+                let estimation = state.vuedenez;
+
+                estimation = computeTechno(state.techno, estimation)
+                estimation = computeConfiance(state.confiance, estimation)
+                estimation = computeMurphy(state.murphy, estimation)
+
+                state.result = estimation;
             }
         }
     }

@@ -9,15 +9,14 @@
     align-self: flex-end;
 }
 
-
 .section-background {
     background: #efefe9;
 }
 
-.modal {
-  display: flex !important;
-  align-items: center;
-}
+/*.modal {*/
+/*  display: flex !important;*/
+/*  align-items: center;*/
+/*}*/
 
 .btn-default {
     border-color: #ccc;

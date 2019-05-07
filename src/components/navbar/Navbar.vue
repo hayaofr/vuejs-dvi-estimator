@@ -6,7 +6,7 @@
 
                 <!-- circular user icon -->
                 <li>
-                    <router-link exact to="/vuedenez">
+                    <router-link exact to="/vuedenez" active-class="active">
                         <span class="round-tabs one">
                             <i class="glyphicon glyphicon-scale"></i>
                         </span>
@@ -14,7 +14,7 @@
                 </li>
                 <!-- circular user icon -->
                 <li>
-                    <router-link exact to="/techno">
+                    <router-link exact to="/techno" active-class="active">
                         <span class="round-tabs two">
                             <i class="glyphicon glyphicon-heart"></i>
                         </span>
@@ -22,7 +22,7 @@
                 </li>
                 <!-- circular user icon -->
                 <li>
-                    <router-link exact to="/confiance">
+                    <router-link exact to="/confiance" active-class="active">
                         <span class="round-tabs three">
                             <i class="glyphicon glyphicon-file"></i>
                         </span>
@@ -30,14 +30,14 @@
                 </li>
                 <!-- circular user icon -->
                 <li>
-                    <router-link exact to="/murphy">
+                    <router-link exact to="/murphy" active-class="active">
                         <span class="round-tabs four">
                             <i class="glyphicon glyphicon-refresh"></i>
                         </span>
                     </router-link>
                 </li>
                 <li>
-                    <router-link exact to="/result">
+                    <router-link exact to="/result" active-class="active">
                         <span class="round-tabs five">
                             <i class="glyphicon glyphicon-calendar"></i>
                         </span>
