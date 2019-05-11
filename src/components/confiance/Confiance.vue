@@ -38,7 +38,7 @@
         computed: {
             confiance: {
                 get() {
-                    return this.$store.state.techno;
+                    return this.$store.state.confiance;
                 },
                 set(value) {
                     this.$store.commit("setConfiance", value);
