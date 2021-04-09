@@ -2061,7 +2061,7 @@ function winwheelAnimationLoop() {
 // ====================================================================================================================
 function winwheelTriggerSound() {
 	// If this property does not exist then add it as a property of the winwheel.
-	if (winwheelToDrawDuringAnimation.hasOwnProperty('_lastSoundTriggerNumber') == false) {
+	if (Object.prototype.hasOwnProperty.call(winwheelToDrawDuringAnimation, '_lastSoundTriggerNumber') == false) {
 		winwheelToDrawDuringAnimation._lastSoundTriggerNumber = 0
 	}
 
